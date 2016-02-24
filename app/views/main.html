@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Javascript Calculator
+  </p>
+  {{display}}{{screen}}<br>
+  {{result}}
+  <div class="row"><p>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="clear()">C</button>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="updateScreen('.')">.</button>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="calculate()">=</button>
+  </p></div>
+  <div class="row"><p>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="updateScreen(1)">1</button>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="updateScreen(2)">2</button>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="updateScreen(3)">3</button>
+  </p></div>
+  <div class="row"><p>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="updateScreen(4)">4</button>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="updateScreen(5)">5</button>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="updateScreen(6)">6</button>
+  </p></div>
+  <div class="row"><p>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="updateScreen(7)">7</button>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="updateScreen(8)">8</button>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="updateScreen(9)">9</button>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="updateScreen(0)">0</button>
+  </p></div>
+  <div class="row"><p>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="addOperator('+')">+</button>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="addOperator('-')">-</button>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="addOperator('*')">x</button>
+    <button type="button" class="btn btn-secondary btn-lg" ng-click="addOperator('/')">/</button>
+  </p></div>
+  {{history}}
+</div>
