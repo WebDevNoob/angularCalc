@@ -53,8 +53,16 @@ body {
   border-bottom: 1px solid #e5e5e5;
 
   .btn {
-    font-size: 21px;
+    height:10vh;
+    width: 10vw;
+    font-size: 2em;
     padding: 14px 24px;
+  }
+  .equal{
+    width:60%;
+  }
+  .clear{
+    margin-right: 31vw;
   }
 }
 
