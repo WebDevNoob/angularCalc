@@ -1,5 +1,5 @@
 {
-  "name": "jscalculator",
+  "name": "angularcalc",
   "private": true,
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
@@ -38,5 +38,22 @@
   },
   "scripts": {
     "test": "grunt test"
-  }
+  },
+  "description": "This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular) version 0.15.1.",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebDevNoob/angularCalc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebDevNoob/angularCalc/issues"
+  },
+  "homepage": "https://github.com/WebDevNoob/angularCalc#readme"
 }

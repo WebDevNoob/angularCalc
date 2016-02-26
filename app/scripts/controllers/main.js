@@ -17,11 +17,11 @@ angular.module('jscalculatorApp')
     $scope.result  =  0;
 
     $scope.updateScreen = function(num){
-      if (num == "."){
-        if ($scope.screen.length == 0){
-          $scope.screen.push("0.");
+      if (num === '.'){
+        if ($scope.screen.length === 0){
+          $scope.screen.push('0.');
         }else{
-          $scope.screen.push(".");
+          $scope.screen.push('.');
         }
       }else{
         $scope.screen.push(num);
@@ -29,7 +29,7 @@ angular.module('jscalculatorApp')
     };
 
     $scope.addOperator = function(op){
-      if ($scope.screen.length == 0){
+      if ($scope.screen.length === 0){
         $scope.screen[0] = $scope.result;
       }
       if (Number.isInteger($scope.screen[$scope.screen.length - 1])){
@@ -39,10 +39,10 @@ angular.module('jscalculatorApp')
         $scope.screen = [];
       }
         $scope.display[$scope.display.length -1] = op;
-    }
+    };
 
     $scope.calculate = function(){
-      var calculations = "";
+      var calculations = '';
 
       holder[holder.length] = $scope.screen.join('');
       $scope.display = holder;
@@ -51,11 +51,11 @@ angular.module('jscalculatorApp')
         calculations = calculations + $scope.display[i];
       }
       $scope.result = eval(calculations);
-      $scope.history.push(calculations + "=" + $scope.result);
+      $scope.history.push(calculations + '=' + $scope.result);
       $scope.display = $scope.result;
       $scope.screen = [];
       holder = [];
-      }
+    };
 
     $scope.clear =  function(){
       $scope.screen  = [];
