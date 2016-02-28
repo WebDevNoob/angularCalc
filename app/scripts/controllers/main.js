@@ -64,5 +64,4 @@ angular.module('jscalculatorApp')
       holder         = [];
       $scope.result  =  0;
     };
-
   });
